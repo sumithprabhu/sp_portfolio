@@ -1,0 +1,123 @@
+.app__navbar{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+    background-color: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    z-index: 2;
+}
+.app__navbar-logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img{
+    width:110px;
+    height:60px;
+    }
+}
+.app__navbar-links{
+    flex:1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    li {
+        margin:0 1rem ;
+        cursor: pointer;
+
+        a{
+            color: var(--gray-color);
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all 0.4s ease-in-out;
+            font-weight: 600;
+
+            &:hover{
+                color: var(--secondary-color);
+            }
+        }
+    }
+    @media screen and (max-width:900px) {
+        display:none;
+    }
+}
+.app__navbar-menu{
+    width:40px;
+    height:40px;
+    position: relative;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    svg{
+        width:80%;
+        height: 80%;
+        
+    }
+    div{
+        position:fixed;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        z-index: 4;
+        padding: 1rem;;
+        width:80%;
+        height: 100vh;
+        justify-content: flex-end;
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        background: url('../../assets/bgWhite.png');
+        background-color: var(--white-color);
+        background-size: cover;
+        //background-repeat: repeat;
+        box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.55);
+
+        svg{
+            width:40px;
+            height: 40px;
+            color: var(--secondary-color);
+            margin: 0.5rem 1rem;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height:100%;
+            justify-content: flex-start;
+            align-items: flex-start;
+            
+        }
+        li{
+            margin: 1rem;
+            a{
+                color: var(--grey-color);
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 1rem;
+                transition: all 0.4s ease-in-out;
+
+                &:hover{
+                    color: var(--secondary-color);
+
+                }
+            }
+        }
+
+    }
+
+    @media screen and (min-width:900px) {
+        display:none;
+    }
+}
