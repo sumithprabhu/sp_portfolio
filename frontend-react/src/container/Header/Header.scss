@@ -5,7 +5,7 @@
     background-position: center;
     background-repeat: repeat;
   
-    // disable the default padding styles
+    
     .app__wrapper {
       padding: 0;
   
@@ -166,16 +166,18 @@
   .app__header-img {
     flex: 1;
     height: 100%;
-  
+    
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     position: relative;
   
     img {
+      
       width: 140%;
       object-fit: contain;
       z-index: 1;
+      margin-left: -4rem;
     }
     
     @media screen and (max-width: 1200px) {

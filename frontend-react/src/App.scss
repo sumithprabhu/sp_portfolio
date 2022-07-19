@@ -1,6 +1,7 @@
 .app {
     background-color: var(--primary-color);
     font-family: var(--font-base);
+    overflow: hidden;
   }
   
   .app__whitebg {
@@ -157,6 +158,7 @@
     padding: 1rem;
   
     .app__navigation-dot {
+      z-index: 1;
       width: 10px;
       height: 10px;
       border-radius: 50%;
