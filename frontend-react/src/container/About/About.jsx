@@ -18,7 +18,7 @@ const About = () => {
 
   return (
     <>
-      <h2 className="head-text">A Better <span>Website,</span> <br />A Better  <span>World !</span></h2>
+      <h2 className="head-text">My<span> Niche🚀</span> </h2>
 
       <div className="app__profiles">
         {abouts.map((about, index) => (
